@@ -2,33 +2,34 @@
 <a href="https://visheshbansal.ml">
 	<img src="https://i.ibb.co/KxrdfnF/vishesh-white.png" width="300" alt="Vishesh Bansal"/>
 </a>
-	<h1 align="center"> Project Name </h1>
-	<h3 align="center"> Project Description </h3>
+	<h1 align="center"> Trie SpellCheck </h1>
+	<h3 align="center"> A spell checker using Tries and Optical Character Recognition </h3>
 </p>
+<br>
 
-> Block Description
+> Trie Spellchecker is a Trie-based implemented Spell Checker that finds mistakes in OCR scanned text
 
 ## Features
-- [X] Feature 1
-- [X] Feature 2
-- [ ] Feature 3 
+
+- [ ] Gets text using Optical Character Recognition (OCR)
+- [ ] Traverses dictionary using Tries and displays spelling mistakes
 
 <br>
 
 ## Dependencies
- - <dependency>
- - <dependency>
 
+- Node.js
+- Yarn
 
 ## Running
 
+#### Directions to install
 
-Directions to install 
 ```bash
 npm install
 ```
 
-Directions to execute
+#### Directions to execute
 
 ```bash
 npm start
