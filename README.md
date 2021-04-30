@@ -26,13 +26,13 @@
 #### Directions to install
 
 ```bash
-npm install
+yarn install
 ```
 
 #### Directions to execute
 
 ```bash
-npm start
+yarn start
 ```
 
 ## Contributors

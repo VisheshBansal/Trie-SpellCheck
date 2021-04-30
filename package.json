@@ -1,9 +1,16 @@
 {
   "name": "trie-spellcheck",
-  "version": "0.0.0",
-  "private": true,
+  "description": "DSA Project using Tries",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/VisheshBansal/Trie-SpellCheck",
+    "type": "git"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,5 +25,6 @@
     "multer": "^1.4.2",
     "shell": "^0.8.4",
     "shelljs": "^0.8.4"
-  }
+  },
+  "author": "Vishesh Bansal"
 }
