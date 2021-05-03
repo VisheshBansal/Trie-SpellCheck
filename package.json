@@ -13,18 +13,35 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^4.6.0",
+    "browser-sync": "^2.26.14",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "~4.16.1",
+    "fontawesome": "^5.6.3",
     "fs": "^0.0.1-security",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-header": "^2.0.9",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "header": "^0.1.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "jquery": "^3.6.0",
     "morgan": "~1.9.1",
     "multer": "^1.4.2",
+    "popper.js": "^1.16.1",
+    "rename": "^1.0.4",
+    "sass": "^1.32.12",
     "shell": "^0.8.4",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.4",
+    "uglify": "^0.1.5"
   },
   "author": "Vishesh Bansal"
 }

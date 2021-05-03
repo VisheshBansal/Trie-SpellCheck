@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Spell Checker Implemented using Tries">
+    <meta name="author" content="Vishesh Bansal">
+
+    <title>SpellCheck</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css">
+
+</head>
+<body>
+
+<div class="overlay"></div>
+<div class="container"><br><br> <br><br><br><br><br> <br><br><br>
+    <center>
+        <p style="color:black">
+            OCR text: <%=text%>
+        </p>
+
+    </center>
+
+    <%  data.forEach((element)=>{ %>
+        <center> <p style="color:black"><%= element %></p> </center>
+    <% }); %>
+
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/style.js"></script>
+
+</body>
+
+</html>

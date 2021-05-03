@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="en">
 
 <head>
@@ -11,13 +12,69 @@
     <title>SpellCheck</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i"
+          rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
+    <link href="css/style.css">
 
 </head>
+<body>
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="videos/bg.mp4" type="video/mp4">
+</video>
+
+<div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 my-auto">
+                <div class="masthead-content text-white py-5 py-md-0">
+                    <h1 class="mb-3">SpellCheck</h1>
+                    <p class="mb-5">Upload any photo and instantly get the spelling errors in the text.
+                    </p>
+                    <p>Try it now!</p>
+                    <div class="input-group input-group-newsletter">
+
+
+                        <form action="/" method="post" enctype="multipart/form-data">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupFileAddon01">
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" name="file" class="custom-file-input" id="inputGroupFile01"
+                                           aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default">Upload</button>
+                            </span>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/style.js"></script>
+
+</body>
+
+</html>
+
