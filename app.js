@@ -1,10 +1,10 @@
 require("dotenv").config();
 const express = require("express");
-const multer = require("multer");
 const fs = require("fs");
 const shell = require("shelljs");
 
-var upload = multer({dest: "public/"});
+const multer = require('multer');
+const upload = multer({ dest: './uploads' });
 
 var app = express();
 
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 
-//app.use(require("./routes/ocr"));
+app.use(require("./routes/ocr"));
 //process.env.PORT
 app.listen(process.env.PORT || 3000, () => {
     console.log("OK");
