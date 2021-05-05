@@ -3232,6 +3232,13 @@ ocr-space-api-wrapper@^1.0.5:
     axios "^0.21.0"
     form-data "^3.0.0"
 
+ocr-space-api@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ocr-space-api/-/ocr-space-api-1.0.1.tgz#9dab7f5a189c8f5c84de1d8866b5e1dc7a7ed6b1"
+  integrity sha1-nat/Whicj1yE3h2IZrXh3Hp+1rE=
+  dependencies:
+    request "^2.81.0"
+
 on-finished@^2.3.0, on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
@@ -3715,7 +3722,7 @@ replace-ext@^1.0.0:
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.1.tgz#2d6d996d04a15855d967443631dd5f77825b016a"
   integrity sha512-yD5BHCe7quCgBph4rMQ+0KkIRKwWCrHDOX1p1Gp6HwjPM5kVoCdKGNhN7ydqqsX6lJEnQDKZ/tFMiEdQ1dvPEw==
 
-request@^2.87.0, request@^2.88.0:
+request@^2.81.0, request@^2.87.0, request@^2.88.0:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
