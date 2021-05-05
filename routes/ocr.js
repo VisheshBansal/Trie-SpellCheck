@@ -1,27 +1,22 @@
 const router = require('express').Router();
 const multer = require("multer");
-var multer = require('multer');
-var upload = multer({ dest: '../uploads' });
+var uploads = multer({dest: '../uploads'});
 const shell = require("shelljs");
 require("dotenv").config();
 var fs = require('fs-extra');
 
 const ocrSpace = require('ocr-space-api-wrapper')
-fs.writeFile("../uploads", "temp", function(err) {
-    if(err) {
-        return console.log(err);
+router.post('/', uploads.single('file'), (req, res, next) => {
+    //  console.log(req.file);
+    if (req.file === undefined) {
+        var err = new Error('error');
+        next(err);
     }
-    console.log("The file was saved!");
-});
+    fs.renameSync(req.file.path, "uploads/temp");
 
-async function main () {
-    try {
-        // Using your personal token + local file
-        const result = await ocrSpace('../uploads/temp', { apiKey: process.env.API_KEY })
+    let filepath = "uploads/temp";
 
-    } catch (error) {
-        console.log(error)
-    }
-}
+
+})
 
 module.exports = router;
