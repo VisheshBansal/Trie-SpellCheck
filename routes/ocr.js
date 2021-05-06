@@ -24,17 +24,16 @@ router.post('/', uploads.single('file'), (req, res, next) => {
 
 // Run and wait the result
     ocrSpaceApi.parseImageFromLocalFile(filepath, options)
-        .then(function (parsedResult) {
+        .then(async function (parsedResult) {
             const detections = parsedResult.parsedText;
-            var text = '';
-            text = detections.split("\n").join(" ").toLowerCase();
-
-            fs.writeFileSync("temp.txt", text);
+            let text = detections.toLowerCase();
+            console.log(text);
             shell.cd("./Trie");
-            var data = shell.exec("./checker ../temp.txt").toString();
+            await fs.writeFileSync("ocrData.txt",text);
+            var data = shell.exec("./checker ocrData.txt").toString();
 
-            fs.unlinkSync("../temp.txt");
-            fs.unlinkSync("../" + filepath);
+            //fs.unlinkSync("./ocrData.txt");
+            //fs.unlinkSync("../" + filepath);
             var array = data.split("\n");
             if (array.length <= 1)
                 return res.send("Some problem occurred <a href='/'>go back</a>");

@@ -20,7 +20,9 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    char *filename = argv[1];
+    string filename = argv[1];
+
+    //char filename[] = "ocrData.txt";
 
     //open file
     ifstream fin(filename);
