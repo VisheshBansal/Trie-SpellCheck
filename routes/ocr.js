@@ -6,15 +6,13 @@ require("dotenv").config();
 var fs = require('fs-extra');
 const ocrSpaceApi = require('ocr-space-api');
 
-var options =  {
+var options = {
     apikey: process.env.API_KEY,
     language: 'eng', // English
     imageFormat: 'image/png', // Image Type (Only png ou gif is acceptable at the moment i wrote this)
     isOverlayRequired: true
 };
 
-
-const ocrSpace = require('ocr-space-api-wrapper')
 router.post('/', uploads.single('file'), (req, res, next) => {
     if (req.file === undefined) {
         var err = new Error('error');
@@ -27,7 +25,20 @@ router.post('/', uploads.single('file'), (req, res, next) => {
 // Run and wait the result
     ocrSpaceApi.parseImageFromLocalFile(filepath, options)
         .then(function (parsedResult) {
-            console.log(parsedResult.parsedText);
+            const detections = parsedResult.parsedText;
+            var text = '';
+            text = detections.split("\n").join(" ").toLowerCase();
+
+            fs.writeFileSync("temp.txt", text);
+            shell.cd("./Trie");
+            var data = shell.exec("./checker ../temp.txt").toString();
+
+            fs.unlinkSync("../temp.txt");
+            fs.unlinkSync("../" + filepath);
+            var array = data.split("\n");
+            if (array.length <= 1)
+                return res.send("Some problem occurred <a href='/'>go back</a>");
+            res.render("display", {data: array, text, tone: null});
         }).catch(function (err) {
         console.log('ERROR:', err);
     });

@@ -11,7 +11,7 @@
 
 ## Features
 
-- [ ] Gets text using Optical Character Recognition (OCR)
+- [X] Gets text using Optical Character Recognition (OCR)
 - [ ] Traverses dictionary using Tries and displays spelling mistakes
 
 <br>
