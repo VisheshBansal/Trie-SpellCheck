@@ -54,6 +54,22 @@ video {
     z-index: 1;
 }
 
+.render-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 250%;
+    background-color: #afff4e;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.render-overlay-text{
+    position: relative;
+    z-index: 2;
+}
+
 .masthead {
     position: relative;
     overflow: hidden;
