@@ -1,5 +1,4 @@
 #include <iostream>
-//#include "TrieSkeleton.h"
 #include <fstream>
 #include <string.h>
 using namespace std;
@@ -142,7 +141,7 @@ bool Trie::unload(void)
 
 void Trie ::dell(Trie *t) //for freeing the trie using recursion
 {
-    // recursive case (go to end of trie), with a little help from stackoverflow
+    // recursive case (go to end of trie)
     for (int i = 0; i < maxsize; i++)
     {
         if (t->array[i] != NULL)

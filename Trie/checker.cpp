@@ -22,13 +22,11 @@ int main(int argc, char *argv[])
 
     string filename = argv[1];
 
-    //char filename[] = "ocrData.txt";
-
-    //open file
+    //open file and write data to temp.txt
     ifstream fin(filename);
     ofstream fout("temp.txt");
 
-    //handle error if file not found
+    //Error handling if find not found
     if (!fin)
     {
         cout << "File not found\n";
@@ -39,7 +37,7 @@ int main(int argc, char *argv[])
     char *word = new char[80]; //Set a variable to store a word;
     unsigned int i = 0;
 
-    //load the Trie
+    //Loading the Trie and returning the time taken
     clock_t start = clock();
     if (!globalObject->load())
     {
@@ -50,13 +48,11 @@ int main(int argc, char *argv[])
 
     fin >> noskipws; //To prevent skipping spaces and newline chars in text file
 
-    //go through the file
+    //Index through the file
     while (!fin.eof())
     {
-        //fin>>noskipws;
         fin >> c;
-        //cout<<c;
-        //if word is finished check the word
+        //If word is finished check the word
         if (!isalpha(c))
         {
             fin >> c;

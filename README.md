@@ -12,7 +12,7 @@
 ## Features
 
 - [X] Gets text using Optical Character Recognition (OCR)
-- [ ] Traverses dictionary using Tries and displays spelling mistakes
+- [X] Traverses dictionary using Tries and displays spelling mistakes
 
 <br>
 
@@ -22,6 +22,9 @@
 - Yarn
 
 ## Running
+
+Create a .env in the root folder and add your API KEY as ```API_KEY="YOUR_API_KEY"``` and save it.
+<br>
 
 #### Directions to install
 
