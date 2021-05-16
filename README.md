@@ -10,9 +10,6 @@
 > Trie Spellchecker is a Trie-based implemented Spell Checker that finds mistakes in OCR scanned text. DSA Project (CSE2011)
 
 ### Made By:
-**Vishesh Bansal - 20BCE2301**
-
-### Made By:
 **Vishesh Bansal - 20BCE2301** <br />
 
 ## Features
