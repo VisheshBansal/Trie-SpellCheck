@@ -7,7 +7,13 @@
 </p>
 <br>
 
-> Trie Spellchecker is a Trie-based implemented Spell Checker that finds mistakes in OCR scanned text
+> Trie Spellchecker is a Trie-based implemented Spell Checker that finds mistakes in OCR scanned text. DSA Project (CSE2011)
+
+### Made By:
+**Vishesh Bansal - 20BCE2301**
+
+### Made By:
+**Vishesh Bansal - 20BCE2301** <br />
 
 ## Features
 
@@ -23,7 +29,7 @@
 
 ## Running
 
-Create a .env in the root folder and add your API KEY as ```API_KEY="YOUR_API_KEY"``` and save it.
+Create a .env in the root folder and add your API KEY as ```API_KEY="YOUR_API_KEY"``` after getting your API Key from [here](https://ocr.space/OCRAPI) and save it.
 <br>
 
 #### Directions to install
@@ -37,6 +43,13 @@ yarn install
 ```bash
 yarn start
 ```
+
+## Demo
+
+![Video Link](
+https://user-images.githubusercontent.com/22132836/118390418-9b0ca900-b64c-11eb-8eba-e6fad1d90864.mp4
+)
+<br />
 
 ## Contributors
 
