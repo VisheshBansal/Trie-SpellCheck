@@ -43,7 +43,7 @@
     "rename": "^1.0.4",
     "sass": "^1.32.12",
     "shell": "^0.8.4",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "uglify": "^0.1.5"
   },
   "author": "Vishesh Bansal"
